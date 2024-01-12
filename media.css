@@ -1,0 +1,245 @@
+@media screen and (max-width:1400px) {
+nav{
+    padding: 0px 3%;
+}
+.about{
+    height: auto;
+}
+section{
+    padding: 0px 3%;
+    height: auto;
+
+}
+.social-links{
+    padding:0px 3%;
+}
+.about .content h1 .bold{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Lemon",serif;
+    
+    }
+    
+nav .logo a{
+    font-size: 1.2rem;
+
+}
+}
+
+@media screen and (max-width:1000px) {
+
+    nav .menu{
+        display: inline-block;
+    }
+    nav .menu .fa-bars{
+        display: none;
+    }
+    nav .menu .fa-x{
+        color: rgb(233, 44, 44);
+        font-size: 30px;
+        display: none;
+    }
+    nav .menu .fa-bars.active{
+        display: block;
+    }
+    nav .menu .fa-x.active{
+    display: block;
+    }
+
+    .social-links{
+        padding:0px 3%;
+    }
+
+  nav .navbar{
+    display: block;
+    position: absolute;
+background-color: antiquewhite;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 60px;
+    left: 100% ;
+
+    height: 100vh;
+    }
+    nav .cv{
+        position: absolute;
+        top:340px ;
+        z-index: 1000;
+        width: 100%;
+        /* text-align: center; */
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 340px;
+        margin: 0;
+        left: 100%;
+
+
+    }
+    nav.active .navbar{
+        
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 60px;
+        left: 0 ;
+
+        height: 100vh;
+    }
+    nav.active .cv{
+        width: 100%;
+        /* text-align: center; */
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 340px;
+        margin: 0;
+        left: 0;
+
+        /* height: 100vh; */
+    }
+    nav .cv a {
+            width: 200px; 
+            text-align: center;
+            display: inline-block;
+            
+        /* position: absolute;
+        top: 60px;
+        height: 100vh; */
+    }
+    nav .navbar a {
+        /* width: 100%; */
+        margin-bottom: 1rem;
+        margin-left: 0px;
+
+    }
+
+
+
+
+    /* about section  */
+    .about{
+
+    
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .about .image{
+        order: -1;
+        max-width: 400px;
+        width: 80%;
+        height: 300px;
+    
+    }
+    .about .content{
+        /* border: 1px solid black; */
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .social-links{
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+    .skills .row{
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit,170px);
+        /* align-content: space-between; */
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+        
+    }
+
+
+    @media screen and (max-width:580px) {
+        nav .cv a {
+            width: 80%; 
+
+    }
+
+
+    .social-links{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .about .image{
+        order: -1;
+        max-width: 400px;
+        width: 100%;
+        height: 300px;
+    
+    }
+    .about .content{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+
+    
+.about .content h1{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+}
+.about .content h1 .bold{
+font-size: 1.1rem;
+font-weight: 500;
+font-family: "Lemon",serif;
+
+}
+.about .content h1 .outline{
+    text-decoration: underline black 2px;
+color: #000000;
+/* border: 1px solid black; */
+text-transform: capitalize;
+font-weight: 500;
+font-size: 1.4rem;
+
+
+}
+
+.skills .row{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,150px);
+    /* align-content: space-between; */
+    justify-content: center;
+    gap: 1rem;
+}
+.skills .row .box{
+    height: 150px;
+}
+
+
+    }
