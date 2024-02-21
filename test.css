@@ -1,0 +1,5 @@
+.test {
+  color: transparent;
+  -webkit-text-stroke-width: 0.016em;
+  -webkit-text-stroke-color: var(--indigo);
+}

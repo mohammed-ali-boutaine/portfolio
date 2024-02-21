@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
+    <title>Mohammed Ali Boutaine - FullStack Developer</title>
 
-
-    <!-- meta tags -->
-    
-    <meta name="description" content="Moohamme Ali Boutaine Protfolio">
-    <meta name="keywords" content="mohammed ali boutaine,mohammed ali,boutaine.,ohammed abotaine portfolio, portfolio">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="I am Mohammed Ali Boutaine, a FullStack Developer. Explore my skills and projects. Contact me for collaboration.">
+    <meta name="keywords" content="FullStack Developer, Web Developer, Portfolio, HTML, CSS, JavaScript, React, PHP, Laravel, MySQL, MongoDB, Git, GitHub, Figma">
     <meta name="author" content="Mohammed Ali Boutaine">
 
+    <!-- Open Graph meta tags for better social sharing -->
+    <meta property="og:title" content="Mohammed Ali Boutaine - FullStack Developer">
+    <meta property="og:description" content="I am Mohammed Ali Boutaine, a FullStack Developer. Explore my skills and projects. Contact me for collaboration.">
+    <meta property="og:image" content="https://mohammedaliboutaine.portfolio/img/logo.png">
+    <meta property="og:url" content="mohammedaliboutaine.portfolio">
 
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+    <meta name="twitter:title" content="Mohammed Ali Boutaine - FullStack Developer">
+    <meta name="twitter:description" content="I am Mohammed Ali Boutaine, a FullStack Developer. Explore my skills and projects. Contact me for collaboration.">
+    <meta name="twitter:image" content="URL_TO_YOUR_SOCIAL_IMAGE">
 
-    <!-- custom style  -->
+    <!-- Custom stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 
-    <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- gogle font  --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
 <body>
 
 
     <header>
-        <nav class="nav ">
+        <nav class="nav">
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="./imgs/pollogo.svg" alt="">
                     Portfolio</a>
             </div>
@@ -39,17 +52,18 @@
 
             
             <div class="navbar">
-                <a href="#about">about me</a>
+                <a href="#home">Home</a>
                 <a href="#skills">skills</a>
                 <a href="#project">project</a>
-                <a href="#about">review</a>
-                <a href="#about">contact me</a>
-
-
+                <a href="#about">About</a>
+                <a href="#contact">contact me</a>
             </div>
+
+
             <div class="cv"> 
-                <a href="#" class="active">cv <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="active after-animation">cv <i class="fa-solid fa-arrow-right"></i></a>
             </div>
+
             <div class="menu">
                 <i class="fa-solid fa-bars active"></i>
                 <i class="fa-solid fa-x"></i>
@@ -57,8 +71,11 @@
 
         </nav>
     </header>
+
+
+    <!--##############################   Content  -->
     <main>
-        <section class="about" id="about">
+        <section class="home" id="home">
 
             <div class="content">
                 <h1>Hello i'am <span class="bold">Mohammed Ali Boutaine .</span></h1>
@@ -81,9 +98,8 @@
         </section>
      
 
-
         <section id="skills" class="skills">
-            <h1>my <span class="blod">Skills</span></h1>
+            <h1>my <span class="outline">Skills</span></h1>
             <div class="row">
                 <div class="box">
                     <i class="fa-brands fa-html5"></i>
@@ -124,8 +140,8 @@
 
 
                 <div class="box database">
-                    <i class="fa-brands fa-react"></i>
-                     <h3>Mysql & Mongo</h3>
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Mysql MongoDB</h3>
                 </div>
 
                 <div class="box">
@@ -145,17 +161,85 @@
 
 
 
-        </section>
+        </section>  
 
 
         <section class="project" id="project">
+            <h1> <span class="outline">About </span>me</h1>
 
+
+        </section>
+
+        
+        <section class="about" id="about">
+
+        </section>
+
+
+
+        <section id="contact" class="contact">
+            <h1><span class="outline">Contact</span> me</h1>
+            <div class="row">
+                <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Your website (if exists)">
+                        <input type="text" placeholder="How can i help?">
+                        <div class="btns">
+                                <button type="submit" class="after-animation">Get In Touch</button>
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+    
+                        </div>
+                    </form>
+    
+    
+                </div>
+                <div class="info">
+
+                    <h2>Let's Talk</h2>
+                    <p>This form is currently not working. If you want to send an email, please click <a href="mailto:aliboutaine987@gmail.com">here</a>.</p>
+                    <h2><span class="outline">Or</span></h2>
+                    <p>Email: <a href="mailto:aliboutaine987@gmail.com">aliboutaine987@gmail.com</a>  </p>
+                    <p>Phone: 0650246210</p>
+                    <p>Linkdin : <a href="https://www.linkedin.com/in/mohammed-ali-boutaine-052915182/">Mohammed Ali Boutaine
+                    </a>  </p>
+                </div>
+            </div>
         </section>
     </main>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <footer>
-        footer
+
+
+
+
+        <div class="foot">
+            footer
+        </div>
         
     </footer>
 
