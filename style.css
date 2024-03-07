@@ -20,7 +20,7 @@
 
 html {
   font-size: 18px;
-  cursor: url(./imgs/undraw_pointer.svg) 1 1, pointer;
+  cursor: url(./imgs/undraw_pointer.svg) 0.5 0.5, pointer;
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
@@ -372,10 +372,10 @@ h2 .outline {
   border-radius: 4px;
 }
 .contact .row form input:focus {
-  transition: .2s;
-  border: rgb(0, 0, 0) 2px solid ;
+  transition: 0.2s;
+  border: rgb(0, 0, 0) 2px solid;
   outline: none;
-   /* Remove the default focus outline */
+  /* Remove the default focus outline */
 }
 
 .contact .row form button {
