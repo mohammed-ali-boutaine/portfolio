@@ -154,6 +154,31 @@
     gap: 1rem;
   }
 
+  /* about  */
+  .about {
+    margin: 60px auto;
+    /* border: 1px solid black; */
+    display: block;
+    /* flex-direction: row; */
+    gap: 40px;
+  }
+
+  .about div {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+
+  .about .image-div img{
+    max-width:400px;
+    width: 100%;
+  }
+
+  .about .image-div,
+  .about .content{
+    width: 100% !important;
+  }
+
+  /* ============================ */
   /* .contact    */
   .contact .row {
     display: flex;
@@ -260,7 +285,7 @@
   }
   .contact .row form button {
     flex: 1;
-    display:block;
+    display: block;
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;

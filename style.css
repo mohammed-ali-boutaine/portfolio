@@ -20,7 +20,7 @@
 
 html {
   font-size: 18px;
-  cursor: url(./imgs/undraw_pointer.svg) 0.5 0.5, pointer;
+  cursor: url(./imgs/cursor.svg) 1 1, pointer;
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
@@ -135,7 +135,7 @@ nav .navbar a:before {
   transition: transform 0.4s ease; /* Add a smooth transition effect */
 }
 nav .navbar a:hover {
-  cursor: url(./imgs/undraw_pointer.svg) 1 1, pointer;
+  cursor: url(./imgs/cursor.svg) 1 1, pointer;
 }
 
 nav .navbar a:hover:before {
@@ -223,7 +223,7 @@ footer .container {
   gap: 1rem;
 }
 h1 {
-  text-align: center;
+  /* text-align: center; */
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.4rem;
@@ -244,7 +244,7 @@ h2 .outline {
   font-weight: 600;
   font-size: 1.5rem;
 }
-.home .content h1 .bold {
+h1 .bold {
   font-size: 1.6rem;
   font-weight: 500;
   font-family: "Lemon", serif;
@@ -337,6 +337,36 @@ h2 .outline {
   font-size: 16px;
 }
 
+/* about  */
+
+.about {
+  margin: 60px auto;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 40px;
+}
+.about .image-div {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+.about .image-div img {
+  width: 100%;
+}
+
+.about .content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  gap: 20px;
+}
+.about div {
+  /* border: 1px solid black; */
+  /* width: 50%; */
+}
+
 /*  footer   */
 
 .contact {
@@ -392,7 +422,7 @@ h2 .outline {
   color: white;
 }
 .contact .row form button:hover {
-  cursor: url(./imgs/undraw_pointer.svg) 1 1, pointer;
+  cursor: url(./imgs/cursor.svg) 1 1, pointer;
   color: #000;
   background-color: white;
 }
@@ -441,6 +471,7 @@ flex: 1;
 
 /*  footer */
 footer {
+  margin-top: 40px;
   padding: 20px 0px;
   background-color: black;
   color: white;
