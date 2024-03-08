@@ -1,4 +1,12 @@
 @media screen and (max-width: 1400px) {
+
+  html {
+    font-size: 18px;
+    cursor: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+  
   nav {
     padding: 0px 3%;
   }
