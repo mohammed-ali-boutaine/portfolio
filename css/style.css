@@ -212,7 +212,7 @@ footer .container {
 /*### About section*/
 
 .home {
-  height: 50vh;
+  height: 40vh;
   background-color: #ffffff;
 
   display: flex;
@@ -227,6 +227,8 @@ footer .container {
   justify-content: center;
   gap: 1rem;
 }
+
+
 h1 {
   /* text-align: center; */
   text-transform: capitalize;
@@ -254,7 +256,27 @@ h1 .bold {
   font-weight: 500;
   font-family: "Lemon", serif;
 }
+.home .typing{
+  margin: 30px 0px;
+  /* text-decoration: underline; */
 
+}
+#typing-text {
+  /* display: inline-block; */
+ /* color: #000; */
+ border-right: 2px solid #333;
+    padding-right: 2px;
+  animation: typing 1s steps(20) infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
 .home .content p {
   line-height: 1.5rem;
   font-size: 16px;
@@ -336,6 +358,7 @@ h1 .bold {
   margin-bottom: 10px;
 }
 .skills .row h3 {
+  text-align: center;
   transition: 0.2s all;
 }
 .database {
@@ -369,12 +392,21 @@ h1 .bold {
   margin-bottom: 40px;
   text-align: center;
 }
-.project span.bold {
+.project .bold{
+  font-size: 1.8rem;
+
+}
+.project ul{
+  font-size: "Roboto",sans-serif;
+  font-size: 0.8rem;
+  margin-left: 40px;
+}
+/* .project span.bold {
   color: transparent;
   font-size: 1.8rem;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
-}
+} */
 
 .project .row {
   margin-top: 60px;
@@ -396,10 +428,24 @@ h1 .bold {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+/* .project .row .image{
+  width: ;
+  width: 400px;
+  height: 300px;
+} */
+
+/* .project .row .image{
+  background-color: #00cccc;
+} */
 .project .row img {
   border-radius: 25px;
-  max-width: 500px;
+
+  /* max-width: 500px;
   max-height: 400px;
+  max-height: 300px; */
+  width: 450px;
+  height: 320px;
+
   object-fit: cover;
 }
 .project .row .content a{
@@ -449,8 +495,11 @@ cursor: pointer;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  width: 55%;
+  width: 50%;
   gap: 20px;
+}
+.about .content p{
+  line-height: 1.6rem;
 }
 /* .about div { */
 /* border: 1px solid black; */

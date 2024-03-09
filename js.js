@@ -28,4 +28,42 @@ $(document).ready(function () {
 
     $(".nav").removeClass("active");
   });
+
+
+  //typing effect
+  const textElement = $('#typing-text');
+  console.log(document.title)
+  let words;
+  if(document.title){
+     words = ['do Front-End Development.', 'do Back-end Development. ', 'Design WebSite. ', 'Manage Database. '];
+
+  }else{
+    words = ['Faire du développement Front-End. ', 'Faire du développement Back-End. ', 'Concevoir un site Web. ', 'Gérer une base de données. '];
+
+  }
+  let wordIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+      if (charIndex < words[wordIndex].length) {
+          textElement.text(textElement.text() + words[wordIndex].charAt(charIndex));
+          charIndex++;
+          setTimeout(type, 100);
+      } else {
+          setTimeout(erase, 1000);
+      }
+  }
+
+  function erase() {
+      if (charIndex > 0) {
+          textElement.text(words[wordIndex].substring(0, charIndex - 1));
+          charIndex--;
+          setTimeout(erase, 100);
+      } else {
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(type, 500);
+      }
+    }
+    setTimeout(type, 500);
+
 });

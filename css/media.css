@@ -2,7 +2,6 @@
 
   html {
     font-size: 18px;
-    cursor: none;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
   }
@@ -284,8 +283,13 @@ gap: 30px;
 }
 
 @media screen and (max-width: 580px) {
+  html{
+    cursor: none;
+
+  }
   nav .cv a {
     width: 80%;
+
   }
 
   .social-links {
