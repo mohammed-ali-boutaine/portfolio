@@ -283,9 +283,12 @@ gap: 30px;
 }
 
 @media screen and (max-width: 580px) {
-  html{
-    cursor: none;
-
+  html {
+    font-size: 18px;
+cursor: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    overflow-x: hidden;
   }
   nav .cv a {
     width: 80%;
