@@ -29,6 +29,9 @@ html {
   scroll-padding-top: 100px;
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -215,7 +218,7 @@ footer .container {
 .home {
   height: 40vh;
   background-color: #ffffff;
-
+  /* overflow-x: hidden; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -369,6 +372,8 @@ h1 .bold {
   cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
   margin-top: 60px;
   background-color: #000;
+  position: relative;
+  z-index: 3;
 }
 /* .project:hover {
 } */
@@ -606,15 +611,16 @@ flex: 1;
 
 /*  footer */
 footer {
+  position: relative;
+  z-index: 3;
   margin-top: 40px;
   padding: 20px 0px;
   background-color: black;
   color: white;
 }
 
-footer:hover{
+footer:hover {
   cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
-
 }
 footer *:hover {
   cursor: url(../imgs/cursor-white.svg) 1 1, pointer;

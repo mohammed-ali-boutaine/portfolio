@@ -30,6 +30,18 @@ $(document).ready(function () {
   });
 
 
+
+  // document.addEventListener("mousemove",(e)=>{
+  //   const mouseX=e.clientX;
+  //   const mouseY=e.clientY;
+
+  //   const anchor = document.getElementById("logo-box");
+  //   const rekt = anchor.getBoundingClientRect();
+  //   const anchorX = rekt.left+rekt.width/2;
+
+  // })
+
+
   //typing effect
   const textElement = $('#typing-text');
   console.log(document.title)
