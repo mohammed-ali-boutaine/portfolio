@@ -29,9 +29,24 @@ html {
   scroll-padding-top: 100px;
   overflow-x: hidden;
 }
-body {
+/* body {
   overflow-x: hidden;
-}
+  box-sizing: border-box;
+} */
+
+
+
+
+/* Hide scroll bars for WebKit-based browsers */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Re-enable scroll bars for body in WebKit-based browsers */
+/* body::-webkit-scrollbar {
+  display: block;
+} */
+
 
 a {
   text-decoration: none;

@@ -17,7 +17,7 @@ header nav .eye {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   top: 0;
   left: 0;
